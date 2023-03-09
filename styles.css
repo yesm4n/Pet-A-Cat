@@ -1,0 +1,113 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  margin: 1%;
+  background-color: #f7f1e5;
+  color: #898121;
+  font-family: "Merriweather", serif;
+}
+
+h1 {
+  color: #4c4b16;
+  font-weight: 900;
+  font-size: 3rem;
+  padding: 20px 0 5px;
+  text-shadow: 2px 2px black;
+}
+
+h2,
+h3,
+h4 {
+  color: #898121;
+  font-size: 1.5em;
+}
+
+hr {
+  padding: 10px;
+}
+
+img {
+  height: 350px;
+  width: 250px;
+  opacity: 90%;
+  border: solid 3px #e7b10a;
+}
+
+p {
+  font-weight: lighter;
+  line-height: 1.5;
+}
+
+.heading {
+  padding: 10px;
+}
+
+.header-text {
+  font-size: 1rem;
+  opacity: 50%;
+}
+
+.container {
+  display: flex;
+  gap: 2em;
+  /* align-items: center; */
+}
+
+.card {
+  width: 100%;
+
+  /* border: solid 5px black; */
+}
+
+.paw {
+  margin: 20px 0;
+}
+
+.maine {
+  border-radius: 40% 10% 40% 10%;
+  transform: rotate(-10deg);
+}
+
+.angora {
+  border-radius: 40% 40% 10% 10%;
+}
+
+.somali {
+  border-radius: 10% 40% 10% 40%;
+  transform: rotate(10deg);
+}
+
+.hr-styling {
+  border: solid 5px #e7b10a;
+  border-style: dotted;
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  width: 5%;
+}
+
+.last-header {
+  padding: 30px;
+}
+
+@media (max-width: 842px) {
+  .container {
+    flex-direction: column;
+    padding: 5% 10%;
+  }
+
+  .maine {
+    transform: unset;
+    border-radius: 40% 40% 10% 10%;
+  }
+
+  .somali {
+    transform: unset;
+    border-radius: 40% 40% 10% 10%;
+  }
+}
